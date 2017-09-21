@@ -1,0 +1,6 @@
+{
+    "require": {
+        "electrolinux/phpquery": "^0.9.6",
+        "nesbot/carbon": "^1.21"
+    }
+}
