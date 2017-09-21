@@ -22,11 +22,11 @@
 [30-Aug-2016 10:35:13 UTC] PHP Strict Standards:  Declaration of WebCrawler::handleDocumentInfo() should be compatible with PHPCrawler::handleDocumentInfo(PHPCrawlerDocumentInfo $PageInfo) in /home/poliling/public_html/parser-new/functions/crawler.php on line 9
 [30-Aug-2016 10:35:16 UTC] PHP Strict Standards:  Declaration of WebCrawler::handleDocumentInfo() should be compatible with PHPCrawler::handleDocumentInfo(PHPCrawlerDocumentInfo $PageInfo) in /home/poliling/public_html/parser-new/functions/crawler.php on line 9
 [26-Sep-2016 12:38:24 UTC] PHP Strict Standards:  Declaration of WebCrawler::handleDocumentInfo() should be compatible with PHPCrawler::handleDocumentInfo(PHPCrawlerDocumentInfo $PageInfo) in /home/poliling/public_html/parser-new/functions/crawler.php on line 9
-[27-Sep-2016 07:59:10 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/preisaktionen/preisaktion-sonderrabatt-wohnzimmer-moebel.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[27-Sep-2016 07:59:10 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/preisaktionen/preisaktion-sonderrabatt-wohnzimmer-moebel.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
  in /home/poliling/public_html/parser-new/functions/helpers.php on line 4
-[27-Sep-2016 08:39:30 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/ratgeber/produkt_infos/polstermoebel/lederkollektion-elegance.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[27-Sep-2016 08:39:30 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/ratgeber/produkt_infos/polstermoebel/lederkollektion-elegance.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
  in /home/poliling/public_html/parser-new/functions/helpers.php on line 4
-[27-Sep-2016 09:06:01 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/abverkauf/regal-system-calva-wildeiche-weiss.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[27-Sep-2016 09:06:01 UTC] PHP Warning:  file_get_contents(https://www.allnatura.de/abverkauf/regal-system-calva-wildeiche-weiss.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
  in /home/poliling/public_html/parser-new/functions/helpers.php on line 4
 [28-Sep-2016 23:13:17 UTC] PHP Strict Standards:  Declaration of WebCrawler::handleDocumentInfo() should be compatible with PHPCrawler::handleDocumentInfo(PHPCrawlerDocumentInfo $PageInfo) in /home/poliling/public_html/parser-new/functions/crawler.php on line 9
 [13-Oct-2016 09:15:58 UTC] PHP Strict Standards:  Declaration of WebCrawler::handleDocumentInfo() should be compatible with PHPCrawler::handleDocumentInfo(PHPCrawlerDocumentInfo $PageInfo) in /home/poliling/public_html/parser-new/functions/crawler.php on line 9

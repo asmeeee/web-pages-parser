@@ -1,19 +1,19 @@
 <?php
 //error_reporting(E_ALL);
-require_once('../phpQuery/phpQuery.php');
+require_once('../phpQuery/phpQuery.php');
 phpQuery::$debug = true;
 phpQuery::plugin('Scripts');
 
 
 $testName = 'Scripts/example';
 $doc = phpQuery::newDocumentFile('test.html');
-$testResult = 10;
-if ($doc->script('example', 'p')->length == $testResult)
-	print "Test '$testName' PASSED :)";
-else {
+$testResult = 10;
+if ($doc->script('example', 'p')->length == $testResult)
+	print "Test '$testName' PASSED :)";
+else {
 	print "Test '$testName' <strong>FAILED</strong> !!! ";
 	print "<pre>";
-	var_dump($doc->whois());
+	var_dump($doc->whois());
 	print "</pre>\n";
 }
 print "\n";
@@ -34,5 +34,5 @@ else {
 	var_dump($doc->whois());
 	print "</pre>\n";
 }
-print "\n";
+print "\n";
 ?>

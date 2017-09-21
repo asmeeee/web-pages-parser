@@ -3,9 +3,9 @@
 function connectPDO()
 {
     $host   = 'localhost';
-    $dbname = 'poliling_parser';
-    $user   = 'poliling_parser';
-    $pass   = 'tTVEvEf9EES0';
+    $dbname = 'webpages_parser';
+    $user   = 'root';
+    $pass   = '';
 
     try {
 

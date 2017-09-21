@@ -13,7 +13,7 @@ class WebCrawler extends PHPCrawler
     public $old_domain_id;
     public $domain_id;
 
-    function handleDocumentInfo($DocInfo)
+    function handleDocumentInfo(PHPCrawlerDocumentInfo $DocInfo)
     {
         $this->index++;
 
