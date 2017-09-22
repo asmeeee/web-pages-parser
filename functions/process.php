@@ -12,15 +12,23 @@ $resultType = $_POST['result-type'];
 
 if (empty($postUrl)) die('URL is empty');
 
-// Add http://www. to the url - http://www.domain.com/...
-$sourceUrl = parse_url($postUrl);
-$sourceUrl = preg_replace('#^www\.(.+\.)#i', '$1', $sourceUrl['host'] . $sourceUrl['path']);
-$sourceUrl = 'http://www.' . $sourceUrl;
+// Add http(s)://www. to the url - http(s)://www.domain.com/...
+$sourceParsed = parse_url($postUrl);
+
+$sourceProtocol = $sourceParsed['scheme'];
+$sourceHost = $sourceParsed['host'];
+$sourcePath = $sourceParsed['path'];
+
+$sourceUrl = preg_replace('#^www\.(.+\.)#i', '$1', $sourceHost . $sourcePath);
+$sourceUrl = (!empty($sourceProtocol) ? $sourceProtocol : "http") . "://www.{$sourceUrl}";
 
 $crawler = new WebCrawler;
 
 // URL to crawl
 $crawler->setURL($sourceUrl);
+
+// Set User Agent
+$crawler->setUserAgentString("Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36");
 
 // Only receive content of files with content-type "text/html"
 $crawler->addContentTypeReceiveRule("#text/html#");
