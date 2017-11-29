@@ -66,7 +66,6 @@ while($query_rows = $query->fetch()) {
 <section id="main">
     <div class="container">
         <div class="well">
-
             <div class="alert alert-warning" role="alert">
                 Attention! Do not close the page, browser or stop the script after pressing the submit button!
             </div>
@@ -98,6 +97,26 @@ while($query_rows = $query->fetch()) {
                 <!--<div class="form-group" style="margin-left: 10px;">
                     <a class="btn btn-success disabled" id="download-file">Download .txt</a>
                 </div>-->
+            </form>
+        </div>
+
+        <div class="well">
+            <form id="single" action="functions/process_single.php" method="post" class="form-inline">
+                <div class="form-group" style="margin-right: 5px;">
+                    <label for="url">Single URL Per Line</label>
+
+                    <textarea
+                        name="url"
+                        cols="50"
+                        rows="5"
+                        id="url"
+                        class="form-control"
+                        placeholder="http://www.domain.com/"></textarea>
+                </div>
+
+                <div class="form-group" style="margin-left: 5px;">
+                    <input type="submit" class="btn btn-primary">
+                </div>
             </form>
         </div>
 

@@ -1,5 +1,5 @@
 $(function(){
-   $('form').on('submit', function(e){
+   $('form:not(#single)').on('submit', function(e){
        var url = $(this).find('input[name="url"]').val();
        var type = $(this).find('input[name="result-type"]:checked').val();
 
